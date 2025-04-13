@@ -74,7 +74,7 @@ nav:
   - Monitoring:
     - Overview: monitoring/index.md
     - Observability: monitoring/observability.md
-    - Tools: monitoring/tools.md
+    - Alerting: monitoring/alerting.md
   - Security:
     - Authentication: security/secure-software-development-authentication.md
     - Business Logic: security/secure-software-development-business-logic-flows.md
