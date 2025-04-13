@@ -4,66 +4,66 @@
 [![MkDocs](https://img.shields.io/badge/MkDocs-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://www.mkdocs.org/)
 [![Material for MkDocs](https://img.shields.io/badge/Material%20for%20MkDocs-526CFE?style=for-the-badge&logo=materialdesign&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
-Bu blog, DevOps ve Site Reliability Engineering (SRE) konularında deneyimlerimi, öğrendiklerimi ve en iyi uygulamaları paylaşmak için oluşturulmuştur. Linux sistem yönetimi ve otomasyon konularında güçlü bir geçmişe sahibim ve yazılım geliştirme ve dağıtım süreçlerini optimize etmeye odaklanıyorum.
+This blog is created to share my experiences, learnings, and best practices in DevOps and Site Reliability Engineering (SRE). I specialize in streamlining software development and deployment processes, and have a strong background in Linux systems administration and automation.
 
-## 🚀 Özellikler
+## 🚀 Features
 
-- Modern ve duyarlı tasarım
-- Karanlık/Aydınlık tema desteği
-- Arama fonksiyonu
-- Kod örnekleri için sözdizimi vurgulama
-- Sosyal medya entegrasyonu
-- İletişim formu
+- Modern and responsive design
+- Dark/Light theme support
+- Search functionality
+- Syntax highlighting for code examples
+- Social media integration
+- Contact form
 
-## 📚 İçerik
+## 📚 Content
 
-Blog aşağıdaki ana konuları kapsamaktadır:
+The blog covers the following main topics:
 
-- **Kubernetes** konteyner orkestrasyonu
-- **CI/CD** pipeline'ları ve otomasyon
-- **Monitoring** ve gözlemlenebilirlik çözümleri
-- **Security** en iyi uygulamaları ve araçları
+- **Kubernetes** container orchestration
+- **CI/CD** pipelines and automation
+- **Monitoring** and observability solutions
+- **Security** best practices and tools
 
-## 🛠️ Teknolojiler
+## 🛠️ Technologies
 
-- [MkDocs](https://www.mkdocs.org/) - Statik site oluşturucu
-- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - Tema
+- [MkDocs](https://www.mkdocs.org/) - Static site generator
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - Theme
 - [GitHub Pages](https://pages.github.com/) - Hosting
 - [GitHub Actions](https://github.com/features/actions) - CI/CD
 
-## 🚀 Yerel Geliştirme
+## 🚀 Local Development
 
-Projeyi yerel olarak çalıştırmak için:
+To run the project locally:
 
-1. Python 3.x'i yükleyin
-2. Gerekli paketleri yükleyin:
+1. Install Python 3.x
+2. Install required packages:
    ```bash
    pip install mkdocs-material
    ```
-3. Projeyi klonlayın:
+3. Clone the project:
    ```bash
    git clone https://github.com/akkoc16/devops-blog.git
    cd devops-blog
    ```
-4. Geliştirme sunucusunu başlatın:
+4. Start the development server:
    ```bash
    mkdocs serve
    ```
-5. Tarayıcınızda `http://127.0.0.1:8000` adresini açın
+5. Open `http://127.0.0.1:8000` in your browser
 
-## 📝 Katkıda Bulunma
+## 📝 Contributing
 
-1. Bu repoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Bir Pull Request oluşturun
+1. Fork this repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakın.
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-## 🤝 İletişim
+## 🤝 Contact
 
 - LinkedIn: [Mehmet Enver Akkoç](https://www.linkedin.com/in/mehmetenverakkoc/)
 - GitHub: [akkoc16](https://github.com/akkoc16)
