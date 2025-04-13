@@ -106,4 +106,4 @@ Efficiency can be measured by the ratio of the useful work performed by a machin
 
 <strong><em>References</em></strong>
 
-* <em>https://www.oreilly.com/library/view/kubernetes-up-and/9781492046523/</em>
+* <em><a href="https://www.oreilly.com/library/view/kubernetes-up-and/9781492046523/">https://www.oreilly.com/library/view/kubernetes-up-and/9781492046523/</em></a>
