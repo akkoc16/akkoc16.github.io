@@ -1,6 +1,9 @@
 site_name: Mehmet Enver Akkoç
 site_description: Experiences and learnings in DevOps and Site Reliability Engineering
 site_author: Mehmet Enver Akkoç
+site_url: https://akkoc16.github.io/devops-blog/  # GitHub Pages URL'nizi buraya yazın
+repo_url: https://github.com/akkoc16/devops-blog  # GitHub repo URL'nizi buraya yazın
+repo_name: akkoc16/devops-blog  # GitHub repo adınızı buraya yazın
 theme:
   name: material
   features:
