@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
         banner.id = 'cookie-banner';
         banner.innerHTML = `
             <div class="cookie-banner-content">
-                <p>Bu web sitesi, deneyiminizi geliştirmek için çerezleri kullanmaktadır. 
-                Google Analytics ile site kullanımınızı anonim olarak takip ediyoruz. 
-                Devam ederek çerez kullanımını kabul etmiş olursunuz.</p>
+                <p>This website uses cookies to enhance your experience. 
+                We use Google Analytics to anonymously track your site usage. 
+                By continuing, you accept our use of cookies.</p>
                 <div class="cookie-banner-buttons">
-                    <button id="accept-cookies" class="md-button md-button--primary">Kabul Et</button>
-                    <button id="reject-cookies" class="md-button">Reddet</button>
+                    <button id="accept-cookies" class="md-button md-button--primary">Accept</button>
+                    <button id="reject-cookies" class="md-button">Reject</button>
                 </div>
             </div>
         `;
