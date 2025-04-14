@@ -54,6 +54,10 @@ extra:
 
 extra_javascript:
   - javascripts/analytics.js
+  - javascripts/cookie-banner.js
+
+extra_css:
+  - stylesheets/cookie-banner.css
 
 markdown_extensions:
   - pymdownx.highlight:
