@@ -73,7 +73,9 @@ markdown_extensions:
   - footnotes
 
 nav:
-  - Home: index.md
+  - Home:
+    - Welcome: index.md
+    - About: about.md
   - Blog:
     - Kubernetes:
       - Kubernetes Up & Running: kubernetes/kubernetes-up&running.md
@@ -92,4 +94,3 @@ nav:
       - Code Injection: security/secure-software-development-code-injection.md
       - Trust No Input: security/secure-software-development-trust-no-input.md
       - SQL Injections: security/secure-software-development-sql-injections.md
-  - About: about.md
