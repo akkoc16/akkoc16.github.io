@@ -2,8 +2,8 @@ site_name: Mehmet Enver Akkoç
 site_description: Experiences and learnings in DevOps and Site Reliability Engineering
 site_author: Mehmet Enver Akkoç
 site_url: https://akkoc16.github.io/devops-blog/
-repo_url: https://github.com/akkoc16/devops-blog
-repo_name: akkoc16/devops-blog
+repo_url: https://github.com/akkoc16
+repo_name: akkoc16
 theme:
   name: material
   features:
@@ -55,9 +55,11 @@ extra:
 extra_javascript:
   - javascripts/analytics.js
   - javascripts/cookie-banner.js
+  - javascripts/sidebar-visibility.js
 
 extra_css:
   - stylesheets/cookie-banner.css
+  - stylesheets/custom.css
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -74,21 +76,36 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Kubernetes:
-    - Kubernetes Up & Running: kubernetes/kubernetes-up&running.md
-    - Event Monitoring: kubernetes/kubernetes-event-monitoring.md
-  - CI/CD:
-    - Overview: cicd/index.md
-    - Pipeline Optimization: cicd/pipeline-optimization.md
-    - Best Practices: cicd/best-practices.md
-  - Monitoring:
-    - Overview: monitoring/index.md
-    - Observability: monitoring/observability.md
-    - Alerting: monitoring/alerting.md
-  - Security:
-    - Authentication: security/secure-software-development-authentication.md
-    - Business Logic: security/secure-software-development-business-logic-flows.md
-    - Code Injection: security/secure-software-development-code-injection.md
-    - Trust No Input: security/secure-software-development-trust-no-input.md
-    - SQL Injections: security/secure-software-development-sql-injections.md
+  - Blog:
+    - Kubernetes:
+      - Kubernetes Up & Running: kubernetes/kubernetes-up&running.md
+      - Event Monitoring: kubernetes/kubernetes-event-monitoring.md
+    - CI/CD:
+      - Overview: cicd/index.md
+      - Pipeline Optimization: cicd/pipeline-optimization.md
+      - Best Practices: cicd/best-practices.md
+    - Monitoring:
+      - Overview: monitoring/index.md
+      - Observability: monitoring/observability.md
+      - Alerting: monitoring/alerting.md
+    - Security:
+      - Authentication: security/secure-software-development-authentication.md
+      - Business Logic: security/secure-software-development-business-logic-flows.md
+      - Code Injection: security/secure-software-development-code-injection.md
+      - Trust No Input: security/secure-software-development-trust-no-input.md
+      - SQL Injections: security/secure-software-development-sql-injections.md
+    - All Posts:
+      - Kubernetes Up & Running: kubernetes/kubernetes-up&running.md
+      - Kubernetes Event Monitoring: kubernetes/kubernetes-event-monitoring.md
+      - CI/CD Overview: cicd/index.md
+      - Pipeline Optimization: cicd/pipeline-optimization.md
+      - CI/CD Best Practices: cicd/best-practices.md
+      - Monitoring Overview: monitoring/index.md
+      - Observability: monitoring/observability.md
+      - Alerting: monitoring/alerting.md
+      - Authentication: security/secure-software-development-authentication.md
+      - Business Logic: security/secure-software-development-business-logic-flows.md
+      - Code Injection: security/secure-software-development-code-injection.md
+      - Trust No Input: security/secure-software-development-trust-no-input.md
+      - SQL Injections: security/secure-software-development-sql-injections.md
   - About: about.md
