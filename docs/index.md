@@ -2,13 +2,6 @@
 
 This blog is created to share my experiences, learnings, and best practices in DevOps and Site Reliability Engineering (SRE). I specialize in streamlining software development and deployment processes, and have a strong background in Linux systems administration and automation. I'm passionate about using technology to solve complex problems, and I'm always looking for ways to improve the reliability, scalability, and security of the systems I work on.
 
-## 🚀 What You'll Find Here
-
-- **Kubernetes** container orchestration
-- **CI/CD** pipelines and automation
-- **Monitoring** and observability solutions
-- **Security** best practices and tools
-
 ## 📚 Latest Posts
 
 - [Kubernetes Event Monitoring](kubernetes/kubernetes-event-monitoring.md)
