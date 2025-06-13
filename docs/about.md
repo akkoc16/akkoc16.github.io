@@ -9,7 +9,7 @@ permalink: /about/
 .about-image {
   display: block;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 100px;
   width: 100%;
   height: auto;
   border-radius: 8px;
