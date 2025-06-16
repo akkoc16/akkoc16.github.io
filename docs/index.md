@@ -4,6 +4,7 @@ This blog is created to share my experiences, learnings, and best practices in D
 
 ## 📚 Latest Posts
 
+- [Elastic Stack in Action](monitoring/elastic-stack-in-action.md)
 - [Kubernetes Event Monitoring](kubernetes/kubernetes-event-monitoring.md)
 - [Kubernetes Up & Running](kubernetes/kubernetes-up&running.md)
 - [Secure Software Development - Authentication](security/secure-software-development-authentication.md)
