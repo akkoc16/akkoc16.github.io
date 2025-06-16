@@ -88,7 +88,7 @@ nav:
       - Overview: monitoring/index.md
       - Observability: monitoring/observability.md
       - Alerting: monitoring/alerting.md
-      - Elastic Stack in Action: elastic-stack-in-action.md
+      - Elastic Stack in Action: monitoring/elastic-stack-in-action.md
     - Security:
       - Authentication: security/secure-software-development-authentication.md
       - Business Logic: security/secure-software-development-business-logic-flows.md
