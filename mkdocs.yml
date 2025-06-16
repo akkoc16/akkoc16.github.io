@@ -77,7 +77,6 @@ nav:
     - Welcome: index.md
     - About: about.md
   - Blog:
-    - Elastic Stack in Action: elastic-stack-in-action.md
     - Kubernetes:
       - Kubernetes Up & Running: kubernetes/kubernetes-up&running.md
       - Event Monitoring: kubernetes/kubernetes-event-monitoring.md
@@ -89,6 +88,7 @@ nav:
       - Overview: monitoring/index.md
       - Observability: monitoring/observability.md
       - Alerting: monitoring/alerting.md
+      - Elastic Stack in Action: elastic-stack-in-action.md
     - Security:
       - Authentication: security/secure-software-development-authentication.md
       - Business Logic: security/secure-software-development-business-logic-flows.md
