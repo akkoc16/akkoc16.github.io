@@ -59,6 +59,8 @@ Today, Elastic Stack is a core part of the Elastic Platform, which powers soluti
 
 ## How does Logstash work?
 
+![Logstash Pipeline](../images/logstash-pipeline.jpg)
+
 ## **1\. Input**
 
 This is where Logstash **ingests data**. It supports a wide range of inputs such as:
@@ -71,6 +73,8 @@ This is where Logstash **ingests data**. It supports a wide range of inputs such
 
 Each input source is defined by an **input plugin**.
 
+![Reading Apache logs from a file](../images/logstash-input.jpg)
+
 ## 2\. Filter
 
 Once the data is ingested, it goes through a series of **filters** that **parse**, **transform**, or **enrich** it.
@@ -82,6 +86,8 @@ Common filter plugins include:
 *   `date`: to convert timestamps into standard formats
 *   `geoip`: to enrich IP addresses with geographical info
 
+![Parsing a log line using grok](../images/logstash-filter.jpg)
+
 ## 3\. Output
 
 Finally, the processed data is **sent to a destination**, most commonly Elasticsearch, but it can also be sent to:
@@ -90,6 +96,8 @@ Finally, the processed data is **sent to a destination**, most commonly Elastics
 *   Databases
 *   Message queues
 *   Other systems (stdout, email, etc.)
+
+![Outputting to Elasticsearch](../images/logstash-output.jpg)
 
 # Elasticsearch
 
@@ -105,6 +113,8 @@ Finally, the processed data is **sent to a destination**, most commonly Elastics
 *   **Aggregation & Analytics** — Supports complex queries, dashboards, and statistical analysis
 
 ## How does Elasticsearch work?
+
+![How does Elasticsearch work](../images/elasticsearch-works.jpg)
 
 ## 1\. Documents & Indexes
 
@@ -122,6 +132,9 @@ To scale horizontally and ensure high availability:
 *   An **index** is split into multiple **shards**.
 *   Each shard can have **replicas** (copies) distributed across nodes.
 *   This allows parallel processing and fault tolerance.
+
+![Sharding](../images/sharding.jpg)
+
 
 ## 4\. Clusters & Nodes
 
@@ -216,6 +229,9 @@ Starting with version **7.10**, Elasticsearch introduced a **data tiering model*
 
 `node.roles: [ data_frozen ]`
 
+![Data Tiering](../images/data-tiering.jpg)
+
+
 # Kibana
 
 Kibana is a visualization and analytics tool for Elasticsearch. It provides real-time dashboards, search capabilities, and data exploration features.
@@ -228,6 +244,8 @@ Kibana is a visualization and analytics tool for Elasticsearch. It provides real
 *   **Security & Monitoring** — Supports SIEM (Security Information and Event Management) for threat detection
 *   **Machine Learning Integration** — Detects anomalies and patterns in data
 *   **Alerting & Reporting** — Set up alerts and generate reports based on data trends
+
+![ELK Stack Pipeline](../images/elk-stack-pipeline.jpg)
 
 ## 💰**Premium Features of Elasticsearch: Watcher & CCR**
 
@@ -279,6 +297,8 @@ PUT _watcher/watch/error_alert
 **🌐 2\. CCR — Cross Cluster Replication**
 
 **Cross-Cluster Replication (CCR)** is a feature in Elasticsearch that allows data replication from one cluster (leader) to another cluster (follower) in real-time. It is commonly used for disaster recovery, geographic redundancy, and data locality optimization.
+
+![Cross Cluster Replication](../images/ccr.jpg)
 
 **How It Works:**
 
