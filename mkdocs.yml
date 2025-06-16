@@ -77,6 +77,7 @@ nav:
     - Welcome: index.md
     - About: about.md
   - Blog:
+    - Elastic Stack in Action: elastic-stack-in-action.md
     - Kubernetes:
       - Kubernetes Up & Running: kubernetes/kubernetes-up&running.md
       - Event Monitoring: kubernetes/kubernetes-event-monitoring.md
