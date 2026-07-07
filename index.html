@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of a Senior DevOps & SRE Engineer with 8+ years of experience. Specializing in infrastructure automation, VMware virtualization, Kubernetes, and high availability systems.">
+    <title>DevOps & SRE Engineer | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Glow Effects -->
+    <div class="glow-bg glow-1"></div>
+    <div class="glow-bg glow-2"></div>
+    <div class="glow-bg glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-prompt">enver@sre:~#</span> <span class="logo-blink">_</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#terminal" class="nav-item">Terminal</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#certs" class="nav-item">Certifications</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#blog" class="nav-item">Articles</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#contact" class="nav-item nav-btn">Contact Me</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Open Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo-prompt">enver@sre:~#</div>
+            <button class="close-drawer" id="closeDrawer">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <nav class="drawer-links">
+            <a href="#about" class="drawer-item">About</a>
+            <a href="#terminal" class="drawer-item">Terminal</a>
+            <a href="#skills" class="drawer-item">Skills</a>
+            <a href="#certs" class="drawer-item">Certifications</a>
+            <a href="#projects" class="drawer-item">Projects</a>
+            <a href="#blog" class="drawer-item">Articles</a>
+            <a href="#experience" class="drawer-item">Experience</a>
+            <a href="#contact" class="drawer-item drawer-btn">Contact Me</a>
+        </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-info">
+                        <div class="badge">
+                            <span class="status-dot animate-pulse"></span>
+                            <span>All Systems Operational</span>
+                        </div>
+                        <h1 class="hero-title">
+                            Building Scalable, Reliable, and <span class="text-gradient">Fault-Tolerant</span>
+                            Infrastructures.
+                        </h1>
+                        <p class="hero-subtitle">
+                            I'm Mehmet Enver Akkoç, a Tech Lead SRE & DevOps Engineer with 8 years of experience. I
+                            specialize in architecting high-availability on-premises and private cloud infrastructures based on VMware, designing
+                            automated GitOps pipelines, and implementing advanced SRE observability to ensure a 99.99% uptime SLA.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#terminal" class="btn btn-primary">Try the Terminal</a>
+                            <a href="#skills" class="btn btn-secondary">View Skills</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <!-- Glassmorphism Metric Hub -->
+                        <div class="metrics-hub">
+                            <div class="metric-card">
+                                <div class="metric-val" data-target="8">0</div>
+                                <div class="metric-lbl">Years of Experience</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-val" data-target="99" data-suffix=".99%">0</div>
+                                <div class="metric-lbl">Target Uptime SLA</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-val" data-target="60" data-suffix="%">0</div>
+                                <div class="metric-lbl">MTTR Incident Reduction</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-val" data-target="7500" data-suffix="+">0</div>
+                                <div class="metric-lbl">Managed Pods & VMs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Terminal Section -->
+        <section id="terminal" class="terminal-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Interactive SRE <span class="text-gradient">Console</span></h2>
+                    <p class="section-desc">Explore my resume using the interactive terminal below. Type
+                        <code>help</code> to get started.
+                    </p>
+                </div>
+                <div class="terminal-wrapper glass-panel">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="terminal-title">bash - enver@sre:~ - 100x24</div>
+                        <div class="terminal-status">CONNECTED (127.0.0.1:22)</div>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="terminal-line system-msg">
+                            SRE Terminal v1.0.0 (x86_64-pc-linux-gnu)
+                            <br>System Status: OPTIMAL | Load Average: 0.12, 0.08, 0.02
+                            <br>Type 'help' to see list of available commands.
+                        </div>
+                        <!-- Terminal history will be dynamically loaded here -->
+                        <div class="terminal-input-row" id="inputRow">
+                            <span class="terminal-prompt">enver@sre:~#</span>
+                            <input type="text" id="terminalInput" autocomplete="off" autofocus spellcheck="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technology <span class="text-gradient">Matrix</span></h2>
+                    <p class="section-desc">The technology stack and tools I have mastered over the past 8 years to
+                        automate and scale infrastructures.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- IaC & Config Management -->
+                    <div class="skill-category glass-panel">
+                        <div class="skill-cat-header">
+                            <svg class="skill-cat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <h3>IaC, Coding & Scripting</h3>
+                        </div>
+                        <p class="skill-cat-desc">Automating infrastructure provisioning, configuration, and custom tooling.</p>
+                        <div class="tech-grid">
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/terraform" alt="Terraform" class="tech-icon">
+                                <span class="tech-name">Terraform</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/ansible" alt="Ansible" class="tech-icon">
+                                <span class="tech-name">Ansible</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/go" alt="Go" class="tech-icon">
+                                <span class="tech-name">Go</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/python" alt="Python" class="tech-icon">
+                                <span class="tech-name">Python</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/gnubash" alt="Bash" class="tech-icon">
+                                <span class="tech-name">Bash</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/yaml" alt="YAML" class="tech-icon">
+                                <span class="tech-name">YAML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Containers & Orchestration -->
+                    <div class="skill-category glass-panel">
+                        <div class="skill-cat-header">
+                            <svg class="skill-cat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                            <h3>Containerization & Orchestration</h3>
+                        </div>
+                        <p class="skill-cat-desc">Orchestrating containerized microservices at scale with Kubernetes.</p>
+                        <div class="tech-grid">
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/docker" alt="Docker" class="tech-icon">
+                                <span class="tech-name">Docker</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/containerd" alt="Containerd" class="tech-icon">
+                                <span class="tech-name">Containerd</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/rancher" alt="RKE2" class="tech-icon">
+                                <span class="tech-name">RKE2</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes" class="tech-icon">
+                                <span class="tech-name">Kubernetes</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/helm/white" alt="Helm" class="tech-icon">
+                                <span class="tech-name">Helm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Virtualization & Cloud -->
+                    <div class="skill-category glass-panel">
+                        <div class="skill-cat-header">
+                            <svg class="skill-cat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                            <h3>Virtualization & Cloud</h3>
+                        </div>
+                        <p class="skill-cat-desc">Managing virtualized on-premise platforms & public cloud infrastructure.</p>
+                        <div class="tech-grid">
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/vmware" alt="vCenter VMware" class="tech-icon">
+                                <span class="tech-name">vCenter VMware</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/npm/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" class="tech-icon">
+                                <span class="tech-name">AWS</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/googlecloud" alt="GCP" class="tech-icon">
+                                <span class="tech-name">GCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CI/CD & GitOps -->
+                    <div class="skill-category glass-panel">
+                        <div class="skill-cat-header">
+                            <svg class="skill-cat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="18" cy="18" r="3"></circle>
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M18 15V9a4 4 0 0 0-4-4H9"></path>
+                                <line x1="6" y1="9" x2="6" y2="15"></line>
+                            </svg>
+                            <h3>CI/CD & GitOps</h3>
+                        </div>
+                        <p class="skill-cat-desc">Building automated pipelines for fast & secure deployments.</p>
+                        <div class="tech-grid">
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/gitlab" alt="GitLab CI" class="tech-icon">
+                                <span class="tech-name">GitLab CI</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/argo" alt="ArgoCD" class="tech-icon">
+                                <span class="tech-name">ArgoCD</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/jenkins" alt="Jenkins" class="tech-icon">
+                                <span class="tech-name">Jenkins</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/harbor" alt="Harbor" class="tech-icon">
+                                <span class="tech-name">Harbor</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/sonatype" alt="Nexus" class="tech-icon">
+                                <span class="tech-name">Nexus</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/bitbucket" alt="Bitbucket" class="tech-icon">
+                                <span class="tech-name">Bitbucket</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/sonarqube.svg" alt="SonarQube" class="tech-icon">
+                                <span class="tech-name">SonarQube</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/jira" alt="Jira" class="tech-icon">
+                                <span class="tech-name">Jira</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/confluence" alt="Confluence" class="tech-icon">
+                                <span class="tech-name">Confluence</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Observability & Monitoring -->
+                    <div class="skill-category glass-panel">
+                        <div class="skill-cat-header">
+                            <svg class="skill-cat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                            <h3>Observability & SRE</h3>
+                        </div>
+                        <p class="skill-cat-desc">Ensuring platform health with metrics, logs, and real-time alerts.</p>
+                        <div class="tech-grid">
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/prometheus" alt="Prometheus" class="tech-icon">
+                                <span class="tech-name">Prometheus</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/grafana" alt="Grafana" class="tech-icon">
+                                <span class="tech-name">Grafana</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/thanos" alt="Thanos" class="tech-icon">
+                                <span class="tech-name">Thanos</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/dynatrace" alt="Dynatrace" class="tech-icon">
+                                <span class="tech-name">Dynatrace</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/elastic" alt="ELK Stack" class="tech-icon">
+                                <span class="tech-name">ELK Stack</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/opsgenie" alt="Opsgenie" class="tech-icon">
+                                <span class="tech-name">Opsgenie</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/zabbix.svg" alt="Zabbix" class="tech-icon">
+                                <span class="tech-name">Zabbix</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases & Middleware -->
+                    <div class="skill-category glass-panel">
+                        <div class="skill-cat-header">
+                            <svg class="skill-cat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                            </svg>
+                            <h3>Databases & Middleware</h3>
+                        </div>
+                        <p class="skill-cat-desc">Managing reverse proxies, caching layers, and message brokers.</p>
+                        <div class="tech-grid">
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/redis" alt="Redis" class="tech-icon">
+                                <span class="tech-name">Redis</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/apachekafka" alt="Kafka" class="tech-icon">
+                                <span class="tech-name">Kafka</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/haproxy.svg" alt="HAProxy" class="tech-icon">
+                                <span class="tech-name">HAProxy</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/nginx" alt="Nginx" class="tech-icon">
+                                <span class="tech-name">Nginx</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security, Identity & Storage -->
+                    <div class="skill-category glass-panel">
+                        <div class="skill-cat-header">
+                            <svg class="skill-cat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <h3>Security, Identity & Storage</h3>
+                        </div>
+                        <p class="skill-cat-desc">Securing secrets, access control, and block storage systems.</p>
+                        <div class="tech-grid">
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/vault" alt="HashiCorp Vault" class="tech-icon">
+                                <span class="tech-name">Vault</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/keycloak" alt="Keycloak" class="tech-icon">
+                                <span class="tech-name">Keycloak</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/svg/longhorn.svg" alt="Longhorn" class="tech-icon">
+                                <span class="tech-name">Longhorn</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.jsdelivr.net/gh/cncf/landscape/hosted_logos/gluster.svg" alt="GlusterFS" class="tech-icon">
+                                <span class="tech-name">GlusterFS</span>
+                            </div>
+                            <div class="tech-badge">
+                                <img src="https://cdn.simpleicons.org/minio" alt="MinIO" class="tech-icon">
+                                <span class="tech-name">MinIO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certs" class="certs-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications & <span class="text-gradient">Licenses</span></h2>
+                    <p class="section-desc">Industry-standard cloud and infrastructure certifications validating my
+                        technical expertise.</p>
+                </div>
+
+                <div class="certs-grid">
+                    <!-- Certificate 1: CKA -->
+                    <div class="cert-card glass-panel">
+                        <div class="cert-badge-wrapper"> <svg class="cert-icon" viewBox="0 0 24 24" width="44"
+                                height="44" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <!-- Heptagon helm outer frame -->
+                                <path d="M12 2 L20 6 L22 14.5 L16.5 21.5 L7.5 21.5 L2 14.5 L4 6 Z" stroke-width="1.8">
+                                </path>
+                                <!-- Center hub -->
+                                <circle cx="12" cy="12" r="2.5" fill="currentColor"></circle>
+                                <!-- Wheel ring -->
+                                <circle cx="12" cy="12" r="5.5" stroke-dasharray="1.5,1"></circle>
+                                <!-- Spokes -->
+                                <line x1="12" y1="12" x2="12" y2="2"></line>
+                                <line x1="12" y1="12" x2="20" y2="6"></line>
+                                <line x1="12" y1="12" x2="22" y2="14.5"></line>
+                                <line x1="12" y1="12" x2="16.5" y2="21.5"></line>
+                                <line x1="12" y1="12" x2="7.5" y2="21.5"></line>
+                                <line x1="12" y1="12" x2="2" y2="14.5"></line>
+                                <line x1="12" y1="12" x2="4" y2="6"></line>
+                            </svg>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">The Linux Foundation</span>
+                            <h3>Certified Kubernetes Administrator (CKA)</h3>
+                            <p class="cert-meta">Issued: Nov 2023 • Credential ID: LF-q6rvuuz90q</p>
+                            <a href="https://www.credly.com/badges/20396a57-fd43-48e6-8a0f-72edb40a61f1/linked_in_profile"
+                                target="_blank" rel="noopener noreferrer" class="cert-verify-btn">Verify Credential</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2: Gremlin Enterprise Chaos Engineering Certified - GECEC -->
+                    <div class="cert-card glass-panel">
+                        <div class="cert-badge-wrapper">
+                            <svg class="cert-icon" viewBox="0 0 24 24" width="44" height="44" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <!-- Mask contour -->
+                                <path d="M4 4 L12 2 L20 4 L18 14 L12 21 L6 14 Z" stroke-width="1.8" fill="currentColor"
+                                    fill-opacity="0.1"></path>
+                                <!-- Horns -->
+                                <path d="M4 4 L2 1.5 M20 4 L22 1.5" stroke-width="1.5"></path>
+                                <!-- Angled mask eyes -->
+                                <polygon points="7,8 10,9 9,11 6,10" fill="currentColor"></polygon>
+                                <polygon points="17,8 14,9 15,11 18,10" fill="currentColor"></polygon>
+                                <!-- Chaos lightning bolt crack -->
+                                <path d="M12 7 L10 12 H14 L12 17" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Gremlin</span>
+                            <h3>Gremlin Enterprise Chaos Engineering Certified - GECEC</h3>
+                            <p class="cert-meta">Issued: Oct 2025 • Credential ID: 72d93b20-e8d1-46d5-9d35-2b9b9f059315
+                            </p>
+                            <a href="https://certification.gremlin.com/credentials/72d93b20-e8d1-46d5-9d35-2b9b9f059315"
+                                target="_blank" rel="noopener noreferrer" class="cert-verify-btn">Verify Credential</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: AWS Certified Cloud Practitioner -->
+                    <div class="cert-card glass-panel">
+                        <div class="cert-badge-wrapper">
+                            <svg class="cert-icon" viewBox="0 0 24 24" width="44" height="44" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <!-- AWS Cloud outline -->
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" stroke-width="1.8"
+                                    fill="currentColor" fill-opacity="0.1"></path>
+                                <!-- Curved Arrow (Amazon Smile) -->
+                                <path d="M6 15 C 8 18, 12 18, 14 16" stroke="currentColor" stroke-linecap="round"
+                                    stroke-width="1.5"></path>
+                                <path d="M12.5 16.5 L 14.5 15.5 L 13.5 13.5" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"></path>
+                            </svg>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Amazon Web Services</span>
+                            <h3>AWS Certified Cloud Practitioner</h3>
+                            <p class="cert-meta">Issued: Jun 2024</p>
+                            <a href="https://www.credly.com/badges/142b0ad0-7f62-4171-a206-a2f5a98bd212/linked_in_profile"
+                                target="_blank" rel="noopener noreferrer" class="cert-verify-btn">Verify Credential</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4: Gitlab Certified Git Associate -->
+                    <div class="cert-card glass-panel">
+                        <div class="cert-badge-wrapper">
+                            <svg class="cert-icon" viewBox="0 0 24 24" width="44" height="44" fill="none"
+                                stroke="currentColor" stroke-width="1.5">
+                                <!-- Center nose/face -->
+                                <path d="M12 22 L7.5 14 H16.5 L12 22 Z" fill="currentColor" fill-opacity="0.1"></path>
+                                <!-- Left cheek -->
+                                <path d="M12 22 L7.5 14 L2 14 Z"></path>
+                                <!-- Right cheek -->
+                                <path d="M12 22 L16.5 14 L22 14 Z"></path>
+                                <!-- Left ear -->
+                                <path d="M2 14 L5.5 4 L7.5 14 Z" fill="currentColor" fill-opacity="0.15"></path>
+                                <!-- Right ear -->
+                                <path d="M22 14 L18.5 4 L16.5 14 Z" fill="currentColor" fill-opacity="0.15"></path>
+                            </svg>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Gitlab</span>
+                            <h3>Gitlab Certified Git Associate</h3>
+                            <p class="cert-meta">Issued: Apr 2021</p>
+                            <a href="https://www.credly.com/badges/ba297a44-76a1-475a-a9a8-539b73eb6242" target="_blank"
+                                rel="noopener noreferrer" class="cert-verify-btn">Verify Credential</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Case Studies & <span class="text-gradient">Projects</span></h2>
+                    <p class="section-desc">Real-world engineering problems solved through automation, reliability
+                        practices, and cost optimization.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <span class="project-badge">VMWARE & KUBERNETES</span>
+                            <h3>Active-Active K8s Migration</h3>
+                        </div>
+                        <p class="project-description">
+                            Zero-downtime migration of a monolithic fintech platform into an active-active
+                            two datacenter on-premise Kubernetes environment based on VMware.
+                        </p>
+                        <div class="project-outcomes">
+                            <div class="outcome-item">
+                                <span class="outcome-val">40%</span>
+                                <span class="outcome-lbl">Resource Optimization</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-val">99.99%</span>
+                                <span class="outcome-lbl">Uptime SLA</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>VMware</span><span>Kubernetes</span><span>ArgoCD</span><span>Helm</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <span class="project-badge">GITOPS & CI/CD</span>
+                            <h3>Automated GitOps Pipelines</h3>
+                        </div>
+                        <p class="project-description">
+                            End-to-end GitOps workflow designed using Jenkins, Bitbucket, and ArgoCD to increase developer
+                            velocity. Integrates SonarQube code quality gates and Nexus artifact repository deployment.
+                        </p>
+                        <div class="project-outcomes">
+                            <div class="outcome-item">
+                                <span class="outcome-val">&lt; 10m</span>
+                                <span class="outcome-lbl">Deploy Lead Time</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-val">85%</span>
+                                <span class="outcome-lbl">Rollback Velocity</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>Jenkins</span><span>ArgoCD</span><span>SonarQube</span><span>Nexus</span><span>Bitbucket</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <span class="project-badge">OBSERVABILITY & SRE</span>
+                            <h3>Observability & Alerting Refactoring</h3>
+                        </div>
+                        <p class="project-description">
+                            Designed a centralized observability dashboard using Prometheus, Grafana, and Thanos to
+                            detect anomalies across 100+ microservices in a high-traffic e-commerce hub. Consolidated
+                            log pipelines via ELK and integrated Opsgenie alerting.
+                        </p>
+                        <div class="project-outcomes">
+                            <div class="outcome-item">
+                                <span class="outcome-val">70%</span>
+                                <span class="outcome-lbl">MTTR Reduction</span>
+                            </div>
+                            <div class="outcome-item">
+                                <span class="outcome-val">90%</span>
+                                <span class="outcome-lbl">Alert Noise Reduction</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>Prometheus</span><span>Grafana</span><span>Thanos</span><span>ELK Stack</span><span>Opsgenie</span><span>Go</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog / Articles Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Medium <span class="text-gradient">Articles</span></h2>
+                    <p class="section-desc">Insights, guides, and thoughts on DevOps, SRE, and infrastructure
+                        automation.</p>
+                </div>
+
+                <!-- Loading State -->
+                <div id="blog-loading" class="blog-loading">
+                    <div class="spinner"></div>
+                    <p>Fetching latest articles from Medium...</p>
+                </div>
+
+                <!-- Articles Grid -->
+                <div id="blog-grid" class="blog-grid" style="display: none;">
+                    <!-- Dynamically populated via JS -->
+                </div>
+
+                <!-- Error State / Fallback Notice -->
+                <div id="blog-error" class="blog-error" style="display: none;">
+                    <p>Unable to load articles. You can visit my publications directly at <a
+                            href="https://medium.com/@m.enver.akkoc" target="_blank"
+                            class="text-gradient">medium.com/@m.enver.akkoc</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Timeline Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title"><span class="text-gradient">Career Journey</span></h2>
+                    <p class="section-desc">From network security to DevOps engineering, site reliability practices, and technical leadership at scale.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Nov 2025 - Present</span>
+                            <h3>Tech Lead SRE / DevOps</h3>
+                            <p class="company">T.O.M. Bank</p>
+                            <p class="timeline-text">
+                                Leading a team of SREs and DevOps engineers to ensure the availability, latency,
+                                performance, efficiency, and capacity management of financial products. Evangelized
+                                GitOps
+                                practices and automated environment provisioning using Terraform. Formulated disaster
+                                recovery (DR) strategies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Nov 2022 - Nov 2025</span>
+                            <h3>Senior SRE & DevOps Engineer</h3>
+                            <p class="company">T.O.M. Bank</p>
+                            <p class="timeline-text">
+                                Managed the end-to-end installation, provisioning, maintenance, and seamless integration of the bank's entire core DevOps and SRE technology matrix. Led the migration of legacy monolithic systems to Kubernetes and automated continuous delivery pipelines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Feb 2022 - Nov 2022</span>
+                            <h3>Site Reliability Engineer</h3>
+                            <p class="company">LC Waikiki</p>
+                            <p class="timeline-text">
+                                Managed enterprise Linux and Windows servers across virtualization platforms (VMware) and cloud environments (Azure, GCP). Led a GitOps transformation integrating ArgoCD with Azure DevOps pipelines, spearheaded a Rancher Kubernetes cluster migration, managed hybrid middleware systems, and established proactive monitoring architectures using Prometheus, Grafana, and Zabbix.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Jul 2021 - Feb 2022</span>
+                            <h3>DevOps Engineer</h3>
+                            <p class="company">Softtech Bilgi Teknolojileri A.Ş.</p>
+                            <p class="timeline-text">
+                                Administered and optimized enterprise Elastic Stack clusters and EVAM real-time campaign management environments. Integrated Grafana metrics dashboards and designed custom internal monitoring solutions to improve operational observability.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Oct 2020 - Jul 2021</span>
+                            <h3>NOC Engineer</h3>
+                            <p class="company">Ebay & Gittigidiyor</p>
+                            <p class="timeline-text">
+                                Supervised 24/7 high-traffic e-commerce platform operations, managed real-time system alerting metrics, and orchestrated cross-functional incident response workflows to maintain service level objectives (SLOs).
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 6 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Feb 2020 - Oct 2020</span>
+                            <h3>DevOps Engineer</h3>
+                            <p class="company">Vakıfbank</p>
+                            <p class="timeline-text">
+                                Engineered internal monitoring automation tools and developed robust management frameworks for distributed batch processing and cron job execution.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 7 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-panel">
+                            <span class="timeline-date">Oct 2018 - Jun 2019</span>
+                            <h3>Network Security Engineer</h3>
+                            <p class="company">Intertech</p>
+                            <p class="timeline-text">
+                                Maintained network security zoning architectures, managed enterprise firewalls and secure site-to-site VPN tunnels, and implemented traffic log analysis systems for compliance auditing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-card glass-panel">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h2 class="contact-title">Let's Strengthen <span class="text-gradient">Your
+                                    Infrastructure</span></h2>
+                            <p class="contact-desc">
+                                Reach out for infrastructure automation, Kubernetes migrations, resource optimization,
+                                or SRE consulting projects.
+                            </p>
+                            <div class="contact-status-badge">
+                                <span class="status-dot animate-pulse"></span>
+                                <span>Available for Freelance & Consulting Projects</span>
+                            </div>
+                        </div>
+                        <div class="contact-links">
+                            <!-- Link Items -->
+                            <div class="contact-link-item">
+                                <span class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <div class="link-label">Email</div>
+                                    <div class="link-value" id="emailVal">enver@sre.dev</div>
+                                </div>
+                                <button class="copy-btn" data-clipboard="emailVal" aria-label="Copy Email">Copy</button>
+                            </div>
+
+                            <div class="contact-link-item">
+                                <span class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                        </path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </span>
+                                <a href="https://www.linkedin.com/in/mehmetenverakkoc/" target="_blank"
+                                    rel="noopener noreferrer" class="contact-anchor">
+                                    <div class="link-label">LinkedIn</div>
+                                    <div class="link-value">linkedin.com/in/mehmetenverakkoc</div>
+                                </a>
+                            </div>
+
+                            <div class="contact-link-item">
+                                <span class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <a href="https://github.com/akkoc16" target="_blank" rel="noopener noreferrer"
+                                    class="contact-anchor">
+                                    <div class="link-label">GitHub</div>
+                                    <div class="link-value">github.com/akkoc16</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Mehmet Enver Akkoç. All Rights Reserved.</p>
+            <p>Designed with ❤️ for High Availability.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
