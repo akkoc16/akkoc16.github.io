@@ -47,6 +47,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Scrollbar Customization */
@@ -358,6 +360,10 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     transition: var(--transition-smooth);
     cursor: pointer;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .btn-primary {
@@ -398,6 +404,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px 20px;
     text-align: center;
     transition: var(--transition-smooth);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .metric-card:hover {
     border-color: var(--border-color-glow);
@@ -532,11 +542,16 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 12px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     gap: 15px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .skill-category:hover {
@@ -627,6 +642,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: default;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .tech-badge:hover {
@@ -975,6 +994,10 @@ footer {
     align-items: center;
     gap: 25px;
     padding: 30px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 .cert-card:hover {
     border-color: var(--border-color-glow);
@@ -1069,6 +1092,10 @@ footer {
     height: 100%;
     overflow: hidden;
     transition: var(--transition-smooth);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .blog-card:hover {
@@ -1208,7 +1235,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
     .skill-category {
-        grid-column: auto !important;
+        grid-column: auto;
+    }
+    .skill-category:nth-child(7) {
+        grid-column: span 2;
     }
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1223,7 +1253,10 @@ footer {
 
 @media (max-width: 768px) {
     section {
-        padding: 70px 0;
+        padding: 60px 0;
+    }
+    .container {
+        padding: 0 20px;
     }
     .nav-links {
         display: none;
@@ -1234,17 +1267,30 @@ footer {
     
     .hero-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    .hero-visual {
-        order: -1;
+        gap: 30px;
     }
     .hero-title {
         font-size: 2.5rem;
     }
     
+    .metrics-hub {
+        gap: 15px;
+    }
+    .metric-card {
+        padding: 20px 15px;
+    }
+    .metric-val {
+        font-size: 2rem;
+    }
+    .metric-lbl {
+        font-size: 0.8rem;
+    }
+    
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+    .skill-category:nth-child(7) {
+        grid-column: auto;
     }
     
     .projects-grid {
@@ -1290,5 +1336,30 @@ footer {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .metrics-hub {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .timeline-item {
+        padding-left: 50px;
+    }
+    .timeline::after {
+        left: 21px;
+    }
+    .timeline-dot {
+        left: 12px !important;
     }
 }
