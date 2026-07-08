@@ -1292,12 +1292,26 @@ footer {
     .skill-category:nth-child(7) {
         grid-column: auto;
     }
+    .tech-badge {
+        padding: 6px 12px;
+        gap: 6px;
+    }
+    .tech-name {
+        font-size: 0.8rem;
+    }
     
     .projects-grid {
         grid-template-columns: 1fr;
     }
+    .project-card {
+        padding: 25px 20px;
+    }
+    
     .blog-grid {
         grid-template-columns: 1fr;
+    }
+    .blog-card-content {
+        padding: 20px;
     }
     
     .cert-card {
@@ -1312,7 +1326,7 @@ footer {
     }
     
     .timeline::after {
-        left: 31px;
+        left: 30px;
     }
     .timeline-item {
         width: 100%;
@@ -1321,7 +1335,7 @@ footer {
         padding-right: 15px;
     }
     .timeline-dot {
-        left: 22px !important;
+        left: 23px !important;
     }
     
     .contact-grid {
@@ -1329,13 +1343,38 @@ footer {
         gap: 40px;
     }
     .contact-card {
-        padding: 30px;
+        padding: 30px 20px;
+    }
+    .contact-link-item {
+        padding: 12px 15px;
+    }
+    .link-value {
+        font-size: 0.95rem;
+        word-break: break-all;
     }
     
     .footer-container {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-link-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 15px;
+    }
+    .contact-anchor, .contact-link-item > div {
+        margin-left: 0;
+        width: 100%;
+    }
+    .contact-link-item .copy-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
     }
 }
 
@@ -1357,9 +1396,22 @@ footer {
         padding-left: 50px;
     }
     .timeline::after {
-        left: 21px;
+        left: 20px;
     }
     .timeline-dot {
-        left: 12px !important;
+        left: 13px !important;
+    }
+    .terminal-header {
+        padding: 10px 12px;
+    }
+    .terminal-title {
+        font-size: 0.75rem;
+    }
+    .terminal-status {
+        font-size: 0.7rem;
+    }
+    .terminal-body {
+        padding: 15px;
+        height: 320px;
     }
 }
