@@ -39,6 +39,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     background-color: var(--bg-base);
+    overflow-x: hidden;
 }
 
 body {
@@ -349,6 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-actions {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -519,6 +521,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #terminalInput {
     flex: 1;
+    min-width: 0;
     background: none;
     border: none;
     outline: none;
@@ -1054,6 +1057,7 @@ footer {
     font-size: 0.8rem;
     color: var(--text-muted);
     margin-bottom: 8px;
+    word-break: break-all;
 }
 
 .cert-verify-btn {
@@ -1288,6 +1292,9 @@ footer {
     
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+    .skill-category {
+        padding: 20px;
     }
     .skill-category:nth-child(7) {
         grid-column: auto;
